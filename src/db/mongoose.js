@@ -1,5 +1,6 @@
 const mongoose = require('mongoose')
 const validator = require('validator')
+console.log(process.env.mongo_url)
 mongoose.connect(process.env.mongo_url,{
     useNewUrlParser:true
 })

@@ -1,7 +1,7 @@
 const sgMail = require('@sendgrid/mail')
 //const sendgridAPIKey='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'
 
-sgMail.setApiKey(process.env.sendgrid_api_key)
+sgMail.setApiKey(process.env.sendgrid_api_key);
 
 const welcomemail = (email,name)=>{
     sgMail.send({
@@ -19,7 +19,7 @@ const cmail= (email,name)=>{
         text:`Goodbye ${name} hope to see you back soon`
     })
 }
-//cancellationmail('avinashkumarkothapalli2002@gmail.com','avi')
+cmail('avinashkumarkothapalli2002@gmail.com','avi')
 
 module.exports={
     welcomemail,
